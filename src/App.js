@@ -1,9 +1,16 @@
 import './App.css';
 
-function App() {
-  return (
-    <h1>hello world</h1>
-  );
-}
+import React, { Component } from 'react'
+import NavBar from './components/NavBar';
+import News from './components/News';
 
-export default App;
+export default class App extends Component {
+  render() {
+    return(
+      <div>
+        <NavBar/>
+        <News/>
+      </div>
+    )
+  }
+}
