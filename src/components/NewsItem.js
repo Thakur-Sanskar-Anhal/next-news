@@ -2,13 +2,6 @@ import React, { Component } from 'react'
 
 export class NewsItem extends Component {
 
-  constructor(){
-    super();
-    console.log('i m a constructor');
-    this.state = {
-      
-    }
-  }
 
   render() {
 
