@@ -36,17 +36,18 @@ export class News extends Component {
     super();
     console.log('i m a constructor');
     this.state = {
-      articles: this.articles
+      articles: this.articles,
+      loading: false
     }
   }
 
   render() {
     return (
       <div className='container my3'>
-        <h2>Next.news top headlines </h2>
+        <h2>Next.news - Top headlines </h2>
         <div className="row my2">
           <div className="col-md-4">
-            <NewsItem title="my title" description="my description" imgUrl="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg"/> 
+            <NewsItem title="my title" description="my description" imgUrl="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg" newsUrl="rodo"/> 
           </div>
           <div className="col-md-4"> 
             <NewsItem title="my title" description="my description"/> 
